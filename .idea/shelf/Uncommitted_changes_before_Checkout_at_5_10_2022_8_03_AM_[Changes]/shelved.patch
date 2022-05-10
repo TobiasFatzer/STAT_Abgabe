@@ -1,0 +1,18 @@
+Index: index.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>## Welcome to GitHub Pages\r\n\r\nYou can use the [editor on GitHub](https://github.com/TobiasFatzer/STAT_Abgabe/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.\r\n\r\nWhenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.\r\n\r\n### Markdown\r\n\r\nMarkdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for\r\n\r\n```markdown\r\nSyntax highlighted code block\r\n\r\n# Header 1\r\n## Header 2\r\n### Header 3\r\n\r\n- Bulleted\r\n- List\r\n\r\n1. Numbered\r\n2. List\r\n\r\n**Bold** and _Italic_ and `Code` text\r\n\r\n[Link](url) and ![Image](src)\r\n```\r\n\r\nFor more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).\r\n\r\n### Jekyll Themes\r\n\r\nYour Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/TobiasFatzer/STAT_Abgabe/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.\r\n\r\n### Support or Contact\r\n\r\nHaving trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/index.md b/index.md
+--- a/index.md	(revision a647d7a31ba48450d2d43d0b440eadaa7127c5df)
++++ b/index.md	(date 1651230416741)
+@@ -35,3 +35,7 @@
+ ### Support or Contact
+ 
+ Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
++
++## Zukunftsvorhersage SMI
++
++### RNN vs LSTM
