@@ -416,5 +416,5 @@ Nach dem Erstellen der Tabelle mit den möglichen Vorhersagen wird noch ein Grap
 
 <img src="images\ML_LSTM_Prediction.png" alt="Simulation des SMIs mittels unserem LSTM Model" title="Simulation des SMIs mittels unserem LSTM Model"/>
 
- Abbildung 9 - Simulation des SMIs mittels unserem LSTM Model
+ Abbildung 10 - Simulation des SMIs mittels unserem LSTM Model
 
