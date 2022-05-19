@@ -1,22 +1,19 @@
 ZHAW School of Management and Law
+
 Statistik WIN, 2022-FS
+
 Dozenten: A. Fazlija, M. Schnauss
-9. Mai 2022
 
+09 Mai 2022
 
-
-
-
-Vortragsthema 03: SMI Analyse
-
-
-
-
+'''Vortragsthema 03: SMI Analyse'''
 
 Namen der Gruppenmitglieder:
 
-Gregory Hill		hillgre1@students.zhaw.ch
+Gregory Hill 		hillgre1@students.zhaw.ch
+
 Michael Neukom	neukomic@students.zhaw.ch
+
 Tobias Fatzer		fatzetob@students.zhaw.ch
 
 Codeverwaltung:	
