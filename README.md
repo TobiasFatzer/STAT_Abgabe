@@ -2,7 +2,7 @@
 
 ### Statistik WIN, 2022-FS
 ### Dozenten: A. Fazlija, M. Schnauss
-### 09 Mai 2022
+### 19 Mai 2022
 
 ## Vortragsthema 03: SMI Analyse
 
@@ -29,7 +29,7 @@
 
 (e)	Schätzen Sie die Standardabweichung (Volatilität) der SMI-Monatsrenditen und simulieren Sie den weiteren Verlauf des SMI.
 
-### 1.2	Rahmenbedingung
+### 1.2	Rahmenbedingungen
 
 Folgende Tabelle stellt die Monatsperformance des SMI-Index von Mai 2020 bis April 2022 dar. Wir haben uns dazu entschieden, diese Tabelle über den möglichen Dateiexport herunterzuladen.
 
@@ -40,7 +40,7 @@ Tabelle 1: Monatsperformance des SMI-Index
 
 
 #### 1.3	Annahmen
-Wir nahmen während der Bearbeitung dieser Arbeit an, dass es sich bei unserem Datensatz um die Population und keine Stichprobe handelt. Jedoch wurden wir letztens in einer Grossklasse verunsichert, da erwähnt wurde, dass die «Schätzungen der Standardabweichungen» nur bei Stichproben stattfinden können. Folgend wurden alle, in Python gelösten Aufgaben, mit der Annahme gelöst, dass es sich um eine Population handelt.
+Wir nahmen während dieser Arbeit an, dass es sich bei unserem Datensatz um die Population und keine Stichprobe handelt. Jedoch wurden wir letztens in einer Grossklasse verunsichert, da erwähnt wurde, dass die «Schätzungen der Standardabweichungen» nur bei Stichproben stattfinden können. Folgend wurden alle, in Python gelösten Aufgaben, mit der Annahme gelöst, dass es sich um eine Population handelt.
 
 ## 2	Ausarbeitung in Python
 ### 2.1	Libraries
@@ -54,7 +54,7 @@ Zur Bearbeitung der Aufgaben a – e wurden folgende Libraries verwendet:
     import pandas as pd
     from dateutil.relativedelta import relativedelta
 
-Die Library «os» ermöglicht uns, den Code unabhängig vom Betriebssystem auszuführen. Dies war in unserem Projekt relevant, da sowohl mit macOS sowie Windows gearbeitet wurde. Insbesondere unterscheiden sich die Betriebssysteme beim Pfad zur benötigten Datei.
+Die Library «os» ermöglicht uns, den Code unabhängig vom Betriebssystem auszuführen. Dies war in unserem Projekt relevant, da sowohl mit macOS sowie Windows gearbeitet wurde. Insbesondere unterscheiden sich die Betriebssysteme beim Pfad zur benötigten Datei. Mehr Detail werden im Kapitel 2.2 Datenverabreitung erläutert.
 
 Mit der Library «statistics» können wir verschiedene Werte aus der Statistik berechnen. Dazu gehören unter anderem der Median, das arithmetische- und geometrische Mittel und der Modus.
 
