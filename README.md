@@ -341,7 +341,7 @@ Nach erfolgten imports werden nun die Daten für den in Abbildung 8 gezeigten Gr
     plt.legend()
     plt.show()
 
-<img src="C:\Users\tobia\PycharmProjects\STAT_Abgabe\images\ML_LSTM_Prediction.png" alt="Simulation des SMIs mittels unserem LSTM Model" title="Simulation des SMIs mittels unserem LSTM Model"/>
+<img src="images\ML_LSTM_Prediction.png" alt="Simulation des SMIs mittels unserem LSTM Model" title="Simulation des SMIs mittels unserem LSTM Model"/>
 
  Abbildung 9 - Simulation des SMIs mittels unserem LSTM Model
 
