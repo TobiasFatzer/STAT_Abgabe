@@ -33,6 +33,10 @@
 
 Folgende Tabelle stellt die Monatsperformance des SMI-Index von Mai 2020 bis April 2022 dar. Wir haben uns dazu entschieden, diese Tabelle über den möglichen Dateiexport herunterzuladen.
 
+<img src="images\Tabelle_der_Daten.png"/>
+
+Tabelle 1: Monatsperformance des SMI-Index
+
 
 
 #### 1.3	Annahmen
@@ -139,7 +143,8 @@ Absolut kein Plan,
 Zuerst wird die Renditeverteilung mittels der Funktion dataframe erstellt. Dabei wird das Erstellte Datenset benutzt.
 
     dataframe['Renditeverteilung'] = round(dataframe['Close'] * 100 / dataframe['Close'].shift() - 100, 2)
-Als nächstes werden alle Null- und NaN-Werte aus der neuen Tabelle mit den korrekten Daten ersetzt. Dieser Schritt war nötig, weil «tobias beendet de satz no =)»
+
+Als nächstes werden alle Null- und NaN-Werte aus der neuen Tabelle mit den korrekten Daten ersetzt. Dieser Schritt war nötig, um einerseits die Daten zu bereinigen und anderseits eine Überprüfung der erhaltenen Werte durchzuführen.
 
     if dataframe['Renditeverteilung'].isnull().values.any() or dataframe['diskrete Rendite'].isnull().values.any():
         dataframe["Renditeverteilung"].fillna(dataframe['Change %'], inplace=True)
@@ -180,7 +185,7 @@ Anschliessend werden die Null- und NaN-Werte auf die gleiche Art und Weise wie v
 
     geomid = pow(dataframe['diskrete Rendite'][0] * dataframe['diskrete Rendite'][len(dataframe['diskrete Rendite']) - 1], 1 / 2)
 
-Um das geometrische Mittel in Python berechnen zu können, müssen wir zuerst eine Formel dafür definieren. Dies aus dem Grund, da Pandas und Statistics die Funktion gemäss unseren Erfahrungen nicht von Haus aus anbieten. Deshalb haben wir die Funktion geomid erstellt, welche wir dann gleich wie die anderen Funktionen anwenden können. Die Formel haben wir gemäss Aufgabenstellung mit dem Anfangs- und Endwert aufgestellt. Entsprechend weicht sie stark vom arithmetischen Mittel aus Kapitel 2.6 ab.
+Um das geometrische Mittel in Python berechnen zu können, müssen wir zuerst eine Formel dafür definieren. Dies aus dem Grund, da Pandas und Statistics die Funktion gemäss unseren Erfahrungen nicht von Haus aus anbieten. Deshalb haben wir die Funktion geomid erstellt, welche wir dann gleich wie die anderen Funktionen anwenden können. Die Formel haben wir gemäss Aufgabenstellung mit dem Anfangs- und Endwert aufgestellt. Entsprechend weicht sie stark vom arithmetischen Mittel aus Kapitel 2.6 ab. Nach unseren Berechnungen beträgt das Geometrische Mittel somit 2.85%.
 
 ###  2.8	Aufgabe e - Schätzen Sie die Standardabweichung (Volatilität) der SMI-Monatsrenditen und simulieren Sie den weiteren Verlauf des SMI.
 #### 2.8.1	Berechnung der Standartabweichung
