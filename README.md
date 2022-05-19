@@ -4,7 +4,7 @@
 ### Dozenten: A. Fazlija, M. Schnauss
 ### 09 Mai 2022
 
-# Vortragsthema 03: SMI Analyse
+## Vortragsthema 03: SMI Analyse
 
 ### Namen der Gruppenmitglieder:
 
@@ -127,8 +127,8 @@ Mit diesem Teil sortieren wir wieder wie in 2.2.3 die Daten nach Älteste zuerst
 
 Um die Lesbarkeit noch zu erhöhen, entfernen wir in diesem Teil die nicht mehr benötigten Spalten. In diesem Fall handelt es sich um die Datumsangaben und um den Preis des SMI vor der Umwandlung.
 Nun werden die Daten wie in der Abbildung 1 angezeigt.
- 
-![](images\Dataset_nachbearbeitung.png)
+
+<img src="images\Dataset_nachbearbeitung.png"/>
 
 Abbildung 1: Datenset nach der Datenverarbeitung
 
@@ -149,8 +149,8 @@ Nun kann mithilfe der Statistics-Library der Median ausgelesen werden.
     dataframe['Renditeverteilung'].median()
 
 Folgende Abbildung zeigt den Boxplot der Renditeverteilung, der Median ist in Rot gekennzeichnet.
- 
-![](images\Boxplot_median.png)
+
+<img src="images\Boxplot_median.png"/>
 
 Abbildung 2 - BoxPlot mit Median in Rot
 
@@ -161,8 +161,8 @@ Analog zur Berechnung des Medians, wird auch bei dieser Aufgabe eine Funktion au
     dataframe['Renditeverteilung'].describe()['25%'])
 
 Folgende Abbildung zeigt den Boxplot der Renditeverteilung, das Erste Quartil ist in Rot gekennzeichnet.
- 
-![](images\Boxplot_Quartil.png)
+
+<img src="images\Boxplot_Quartil.png"/>
 
 Abbildung 3 - BoxPlot mit Erstem Quartil in Rot
 
@@ -195,14 +195,14 @@ Das Modul Statistics stellt zwei verschiedene Funktionen für das Berechnen der 
 #### 2.8.2	Simple Simulationen des SMI
 
 Um den weiteren Verlauf des SMIs zu berechnen haben wir uns überlegt, dass der nächste Eintrag zu einer grossen Wahrscheinlichkeit zwischen der höchsten und niedrigsten Standardabweichung liegen wird. Dies würde für unsere Kalkulation bedeuten, dass der nächste Monat, zwischen 12'000 und 12900 liegen wird (Abbildung 4). Tatsächlich war der Close Wert des SMIs im April bei 12,128.76 CHF.
- 
-![](images\Mögliche_entwicklung_des_SMIS_April.png)
+
+<img src="images\Mögliche_entwicklung_des_SMIS_April.png"/>
 
 Abbildung 4 - Mögliche Entwicklung des SMIs im Monat April
 
 Basierend auf diesem Wissen, haben wir einen Graphen erstellt, der uns den optimalen und suboptimalen Verlauf des SMIs sowie den Durchschnitt (auf der Abbildung «Absolut_Median» genannt; ist ein Fehler) darstellt (Abbildung 5)
 
-![](images\optimale_smi_entwicklung.png)
+<img src="images\optimale_smi_entwicklung.png"/>
 
 Abbildung 5 - Optimale und Suboptimale Entwicklung des SMIs
 
