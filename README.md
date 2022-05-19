@@ -164,7 +164,7 @@ Es können auch sehr komplexe Graphen erstellt werden, bei denen Attribute wie T
 
 Dieser Code zeigt uns einen Graphen, der die Teilaufgaben a, b und c bereits beantwortet und in Abbildung 2 gezeigt ist.
 
-<img src="C:\Users\tobia\PycharmProjects\STAT_Abgabe\images\Complicated_plots.png"/>
+<img src="images\Complicated_plots.png"/>
 
 Abbildung 2 - Komplexe Graphen mit Pandas
 
@@ -270,7 +270,7 @@ Nach Erstellung dieses Graphen konnten wir unseren ersten Vorhersagealgorithmus 
 
 Wie unser Graph mit diesem zusätzlichen Code aussieht, wird in der Abbildung 7 widerspiegelt.
 
-<img src="C:\Users\tobia\PycharmProjects\STAT_Abgabe\images\erste_smi_Prediction.png"/>
+<img src="images\erste_smi_Prediction.png"/>
 
 Abbildung 7 - Erste Prediction des SMI verlaufs
 
