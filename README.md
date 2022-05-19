@@ -234,14 +234,14 @@ Nach Erstellung dieses Graphen, konnten wir unseren ersten Prediciton Algorhytmu
     ]
 
 Wie unser Graph mit diesem Zusätzlichen Code aussieht, wird in der Abbildung 6 widerspiegelt.
- 
-![](C:\Users\tobia\PycharmProjects\STAT_Abgabe\images\erste_smi_Prediction.png)
+
+<img src="C:\Users\tobia\PycharmProjects\STAT_Abgabe\images\erste_smi_Prediction.png"/>
 
 Abbildung 6 - Erste Prediction des SMI verlaufs
 
 Dies ist unsere erste mögliche Simulation des SMI Verlaufs. Diese Simulation bestätigt auch unsere vorherige Theorie, dass die Maximale und Minimale Standardabweichung nicht überschritten werden können. Nach sechs dieser Vorhersagen ist uns aufgefallen, dass alle etwas drastisch aussehen und nicht wirklich nach einer offiziellen SMI Simulation. Wie Abbildung 7 zeigt, werden Ausreisser sehr oft wieder im extremen umgekehrt.
- 
-![](images\sechs_mögliche_SMI_vorhersagen.png)
+
+<img src="images\sechs_mögliche_SMI_vorhersagen.png"/>
 
 Abbildung 7 - Sechs mögliche SMI Predictions
 
@@ -250,7 +250,7 @@ Um diese Simulation zu verfeinern, realitätsnah darzustellen und einen Wissensh
 
 Dazu mussten wir unserem LSTM (Long Short Term Memory) Model zuerst beibringen, wie sich der SMI bis zum heutigen Zeitpunkt verhalten hat. Das Prinzip des LSTM basiert auf dem bereits basierenden Prinzip der RNN (Recurrent Neural Networks) und ist eine Weiterverarbeitung dieser. Dieses Update ermöglicht unserem Model basierend auf dem letzten vorhergesagten Element sowie dem existierenden Datenpunkt den nächsten Datenpunkt vorherzusagen. Um dieses Model zu trainieren, muss es die Möglichkeit haben, sich selber zu überprüfen und zu sehen, ob ihre Vorhersage auch stimmt. Abbildung 8 zeigt das Training des LSTM Models mit den bestehenden Werten des SMIs. Der Code, um dieses Model zu erstellen befindet sich auf GitHub (Link).
 
-![](images\SMI_ML_Prediction.png)
+<img src="images\SMI_ML_Prediction.png"/>
  
 Abbildung 8 - Trainierte Vorhersage des LSTM Models
 
