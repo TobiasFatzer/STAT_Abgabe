@@ -128,6 +128,8 @@ Mit diesem Teil sortieren wir wieder wie in 2.2.3 die Daten nach Älteste zuerst
 Um die Lesbarkeit noch zu erhöhen, entfernen wir in diesem Teil die nicht mehr benötigten Spalten. In diesem Fall handelt es sich um die Datumsangaben und um den Preis des SMI vor der Umwandlung.
 Nun werden die Daten wie in der Abbildung 1 angezeigt.
  
+![](images\Dataset_nachbearbeitung.png)
+
 Abbildung 1: Datenset nach der Datenverarbeitung
 
 ### 2.3	Daten mit Pandas Plotten
@@ -148,7 +150,9 @@ Nun kann mithilfe der Statistics-Library der Median ausgelesen werden.
 
 Folgende Abbildung zeigt den Boxplot der Renditeverteilung, der Median ist in Rot gekennzeichnet.
  
-# Abbildung 2 - BoxPlot mit Median in Rot
+![](images\Boxplot_median.png)
+
+Abbildung 2 - BoxPlot mit Median in Rot
 
 ### 2.5	Aufgabe b - Bestimmen Sie das erste Quartil der Renditeverteilung
 
@@ -158,7 +162,9 @@ Analog zur Berechnung des Medians, wird auch bei dieser Aufgabe eine Funktion au
 
 Folgende Abbildung zeigt den Boxplot der Renditeverteilung, das Erste Quartil ist in Rot gekennzeichnet.
  
-# Abbildung 3 - BoxPlot mit Erstem Quartil in Rot
+![](images\Boxplot_Quartil.png)
+
+Abbildung 3 - BoxPlot mit Erstem Quartil in Rot
 
 #### 2.6	Aufgabe c - Das arithmetische Mittel der diskreten Renditen wird berechnet, falls die erwartete Rendite in zukünftigen Monaten (ex ante) zu schätzen ist. Bestimmen Sie dieses mit den verfügbaren Daten.
 Zuerst wird die diskrete Rendite berechnet.
@@ -190,11 +196,15 @@ Das Modul Statistics stellt zwei verschiedene Funktionen für das Berechnen der 
 
 Um den weiteren Verlauf des SMIs zu berechnen haben wir uns überlegt, dass der nächste Eintrag zu einer grossen Wahrscheinlichkeit zwischen der höchsten und niedrigsten Standardabweichung liegen wird. Dies würde für unsere Kalkulation bedeuten, dass der nächste Monat, zwischen 12'000 und 12900 liegen wird (Abbildung 4). Tatsächlich war der Close Wert des SMIs im April bei 12,128.76 CHF.
  
-# Abbildung 4 - Mögliche Entwicklung des SMIs im Monat April
+![](images\Mögliche_entwicklung_des_SMIS_April.png)
+
+Abbildung 4 - Mögliche Entwicklung des SMIs im Monat April
 
 Basierend auf diesem Wissen, haben wir einen Graphen erstellt, der uns den optimalen und suboptimalen Verlauf des SMIs sowie den Durchschnitt (auf der Abbildung «Absolut_Median» genannt; ist ein Fehler) darstellt (Abbildung 5)
 
-# Abbildung 5 - Optimale und Suboptimale Entwicklung des SMIs
+![](images\optimale_smi_entwicklung.png)
+
+Abbildung 5 - Optimale und Suboptimale Entwicklung des SMIs
 
 Der folgende Code erstellt die Tabelle, die für das Darstellen der Abbildung 5 benötigt wird. Alle Werte werden erst einmal mit dem Close Wert des erhaltenen Datensatzes gefüllt, um den Verlauf besser darzustellen
 
@@ -225,18 +235,24 @@ Nach Erstellung dieses Graphen, konnten wir unseren ersten Prediciton Algorhytmu
 
 Wie unser Graph mit diesem Zusätzlichen Code aussieht, wird in der Abbildung 6 widerspiegelt.
  
-# Abbildung 6 - Erste Prediction des SMI verlaufs
+![](C:\Users\tobia\PycharmProjects\STAT_Abgabe\images\erste_smi_Prediction.png)
+
+Abbildung 6 - Erste Prediction des SMI verlaufs
 
 Dies ist unsere erste mögliche Simulation des SMI Verlaufs. Diese Simulation bestätigt auch unsere vorherige Theorie, dass die Maximale und Minimale Standardabweichung nicht überschritten werden können. Nach sechs dieser Vorhersagen ist uns aufgefallen, dass alle etwas drastisch aussehen und nicht wirklich nach einer offiziellen SMI Simulation. Wie Abbildung 7 zeigt, werden Ausreisser sehr oft wieder im extremen umgekehrt.
  
-# Abbildung 7 - Sechs mögliche SMI Predictions
+![](images\sechs_mögliche_SMI_vorhersagen.png)
+
+Abbildung 7 - Sechs mögliche SMI Predictions
 
 #### 2.8.3	SMI Simulation mit einem LSTM Model
 Um diese Simulation zu verfeinern, realitätsnah darzustellen und einen Wissenshunger zu stillen, der bei uns in der Gruppe herrschte, haben wir uns entschieden, uns in das Land der Neuralen Netze, Machine Learning und AI zu wagen.
 
 Dazu mussten wir unserem LSTM (Long Short Term Memory) Model zuerst beibringen, wie sich der SMI bis zum heutigen Zeitpunkt verhalten hat. Das Prinzip des LSTM basiert auf dem bereits basierenden Prinzip der RNN (Recurrent Neural Networks) und ist eine Weiterverarbeitung dieser. Dieses Update ermöglicht unserem Model basierend auf dem letzten vorhergesagten Element sowie dem existierenden Datenpunkt den nächsten Datenpunkt vorherzusagen. Um dieses Model zu trainieren, muss es die Möglichkeit haben, sich selber zu überprüfen und zu sehen, ob ihre Vorhersage auch stimmt. Abbildung 8 zeigt das Training des LSTM Models mit den bestehenden Werten des SMIs. Der Code, um dieses Model zu erstellen befindet sich auf GitHub (Link).
 
-# Abbildung 8 - Trainierte Vorhersage des LSTM Models
+![](images\SMI_ML_Prediction.png)
+ 
+Abbildung 8 - Trainierte Vorhersage des LSTM Models
 
 Um diese ganzen Kalkulationen zu ermöglichen, mussten wir weitere Libraries importieren. Die erste Library, numpy, wird verwendet, um die Effizienz der Kalkulationen mit Arrays zu erhöhen, da die Datenmodelle in Arrays gespeichert werden. Sklearn wird verwendet, um eine Skalierte Datenmenge aus der vorgegebenen Datenmenge zu erstellen. Keras ist eine Library, die für das Erstellen, Verarbeiten und Auswerten der LSTM Modellen zuständig ist. Yfinance wird verwendet, um alle aktuellen Daten des SMIs zu ziehen.
 
